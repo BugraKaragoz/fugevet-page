@@ -11,6 +11,8 @@ const FAQ = () => {
   const [heights, setHeights] = useState({});
   const answerRefs = useRef([]);
 
+
+  
   // Soru ve cevaplar
   const faqItems = [
     {
