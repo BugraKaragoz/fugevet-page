@@ -1,0 +1,76 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_1234_5678)">
+    <!-- Background -->
+    <path d="M0 0H600V400H0V0Z" fill="#ECF7FF"/>
+    
+    <!-- Background Blob -->
+    <path d="M520 70C570 120 550 250 470 330C390 410 250 400 150 340C50 280 30 170 100 100C170 30 290 40 390 40C490 40 470 20 520 70Z" fill="#CFEAFF"/>
+    
+    <!-- Calendar -->
+    <rect x="160" y="110" width="280" height="260" rx="16" fill="white" stroke="#3F51B5" stroke-width="3"/>
+    
+    <!-- Calendar Header -->
+    <rect x="160" y="110" width="280" height="50" rx="16" fill="#3F51B5"/>
+    
+    <!-- Calendar Days -->
+    <rect x="180" y="180" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="230" y="180" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="280" y="180" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="330" y="180" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="380" y="180" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    
+    <rect x="180" y="230" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="230" y="230" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="280" y="230" width="40" height="40" rx="4" fill="#3F51B5" stroke="#FFF" stroke-width="2"/>
+    <rect x="330" y="230" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="380" y="230" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    
+    <rect x="180" y="280" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="230" y="280" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="280" y="280" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="330" y="280" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    <rect x="380" y="280" width="40" height="40" rx="4" fill="#E3F2FD"/>
+    
+    <!-- Clock -->
+    <circle cx="100" cy="200" r="70" fill="white" stroke="#3F51B5" stroke-width="8"/>
+    <line x1="100" y1="200" x2="100" y2="150" stroke="#3F51B5" stroke-width="6" stroke-linecap="round"/>
+    <line x1="100" y1="200" x2="140" y2="200" stroke="#3F51B5" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Person 1 -->
+    <path d="M370 100C370 100 400 80 420 100C440 120 430 150 430 150L400 160L370 150C370 150 360 120 370 100Z" fill="#005CAF"/>
+    <circle cx="400" cy="70" r="25" fill="#FFC3A0"/>
+    <path d="M385 65C385 65 390 70 400 70C410 70 415 65 415 65" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="390" cy="60" r="3" fill="#333"/>
+    <circle cx="410" cy="60" r="3" fill="#333"/>
+    
+    <!-- Person 2 -->
+    <path d="M520 330C520 330 550 310 570 330C590 350 580 380 580 380L550 390L520 380C520 380 510 350 520 330Z" fill="#673AB7"/>
+    <circle cx="550" cy="300" r="25" fill="#FFD8A8"/>
+    <path d="M535 295C535 295 540 300 550 300C560 300 565 295 565 295" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="540" cy="290" r="3" fill="#333"/>
+    <circle cx="560" cy="290" r="3" fill="#333"/>
+    
+    <!-- Pencil -->
+    <path d="M570 230L520 280L500 300L490 290L510 270L560 220L570 230Z" fill="#FFC107"/>
+    <path d="M570 230L520 280L500 300L490 290L510 270L560 220L570 230Z" stroke="#FFA000" stroke-width="2"/>
+    <path d="M490 290L480 310L500 300L490 290Z" fill="#D50000"/>
+    
+    <!-- Calendar Text -->
+    <text x="300" y="145" font-family="Arial" font-size="20" fill="white" text-anchor="middle">RANDEVU</text>
+    <text x="295" y="255" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">15</text>
+    
+    <!-- Small Decorative Elements -->
+    <circle cx="50" cy="50" r="10" fill="#3F51B5" opacity="0.5"/>
+    <circle cx="550" cy="100" r="8" fill="#673AB7" opacity="0.5"/>
+    <circle cx="480" cy="350" r="12" fill="#2196F3" opacity="0.5"/>
+    <circle cx="80" cy="350" r="15" fill="#03A9F4" opacity="0.5"/>
+    
+    <!-- Animation -->
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+  </g>
+  <defs>
+    <clipPath id="clip0_1234_5678">
+      <rect width="600" height="400" fill="white"/>
+    </clipPath>
+  </defs>
+</svg> 

@@ -1,0 +1,100 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_1234_5680)">
+    <!-- Background -->
+    <path d="M0 0H600V400H0V0Z" fill="#F7FBFF"/>
+    
+    <!-- Background Blob -->
+    <path d="M520 30C590 70 580 210 500 290C420 370 280 400 180 350C80 300 30 200 100 120C170 40 260 40 370 30C480 20 450 -10 520 30Z" fill="#E3F1FF"/>
+    
+    <!-- Main Screen/Monitor -->
+    <rect x="120" y="100" width="320" height="220" rx="10" fill="#FFFFFF" stroke="#2979FF" stroke-width="3"/>
+    <rect x="120" y="100" width="320" height="30" rx="10" fill="#2979FF"/>
+    <circle cx="135" cy="115" r="5" fill="#FF5252"/>
+    <circle cx="150" cy="115" r="5" fill="#FFCA28"/>
+    <circle cx="165" cy="115" r="5" fill="#66BB6A"/>
+    
+    <!-- Financial Charts -->
+    <rect x="140" y="150" width="120" height="150" rx="5" fill="#F5F5F5"/>
+    
+    <!-- Pie Chart -->
+    <path d="M200 200 L200 160 A40 40 0 0 1 235 185 Z" fill="#3F51B5"/>
+    <path d="M200 200 L235 185 A40 40 0 0 1 200 240 Z" fill="#673AB7"/>
+    <path d="M200 200 L200 240 A40 40 0 0 1 160 200 Z" fill="#2196F3"/>
+    <path d="M200 200 L160 200 A40 40 0 1 1 200 160 Z" fill="#00BCD4"/>
+    
+    <!-- Bar Graph -->
+    <rect x="300" y="150" width="120" height="150" rx="5" fill="#F5F5F5"/>
+    
+    <rect x="315" y="240" width="15" height="40" fill="#3F51B5"/>
+    <rect x="340" y="210" width="15" height="70" fill="#673AB7"/>
+    <rect x="365" y="230" width="15" height="50" fill="#2196F3"/>
+    <rect x="390" y="190" width="15" height="90" fill="#00BCD4"/>
+    
+    <!-- Line connector -->
+    <line x1="315" y1="270" x2="405" y2="270" stroke="#DDD" stroke-width="1"/>
+    <line x1="315" y1="240" x2="405" y2="240" stroke="#DDD" stroke-width="1"/>
+    <line x1="315" y1="210" x2="405" y2="210" stroke="#DDD" stroke-width="1"/>
+    <line x1="315" y1="180" x2="405" y2="180" stroke="#DDD" stroke-width="1"/>
+    
+    <!-- Businessman -->
+    <path d="M450 150C450 150 480 130 500 150C520 170 500 250 500 250H450C450 250 430 170 450 150Z" fill="#3F51B5"/>
+    <circle cx="475" cy="120" r="30" fill="#FFD8A8"/>
+    <path d="M460 115C460 115 465 120 475 120C485 120 490 115 490 115" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="465" cy="110" r="3" fill="#333"/>
+    <circle cx="485" cy="110" r="3" fill="#333"/>
+    
+    <!-- Dollar sign -->
+    <text x="40" y="160" font-family="Arial" font-size="80" fill="#4CAF50" font-weight="bold">$</text>
+    
+    <!-- Target -->
+    <circle cx="520" cy="80" r="30" fill="white" stroke="#F44336" stroke-width="3"/>
+    <circle cx="520" cy="80" r="20" fill="white" stroke="#F44336" stroke-width="2"/>
+    <circle cx="520" cy="80" r="10" fill="#F44336"/>
+    
+    <!-- Coins stack 1 -->
+    <ellipse cx="450" cy="320" rx="30" ry="10" fill="#FFC107"/>
+    <ellipse cx="450" cy="315" rx="30" ry="10" fill="#FFCA28"/>
+    <ellipse cx="450" cy="310" rx="30" ry="10" fill="#FFD54F"/>
+    <ellipse cx="450" cy="305" rx="30" ry="10" fill="#FFE082"/>
+    <ellipse cx="450" cy="300" rx="30" ry="10" fill="#FFECB3"/>
+    
+    <!-- Coins stack 2 -->
+    <ellipse cx="500" cy="330" rx="25" ry="8" fill="#FFC107"/>
+    <ellipse cx="500" cy="325" rx="25" ry="8" fill="#FFCA28"/>
+    <ellipse cx="500" cy="320" rx="25" ry="8" fill="#FFD54F"/>
+    <ellipse cx="500" cy="315" rx="25" ry="8" fill="#FFE082"/>
+    
+    <!-- Small Decorative Elements -->
+    <circle cx="80" cy="230" r="10" fill="#3F51B5" opacity="0.5"/>
+    <circle cx="560" cy="180" r="8" fill="#673AB7" opacity="0.5"/>
+    <circle cx="70" cy="350" r="12" fill="#2196F3" opacity="0.5"/>
+    <circle cx="350" cy="50" r="15" fill="#03A9F4" opacity="0.5"/>
+    
+    <!-- Percentage Signs -->
+    <text x="70" y="290" font-family="Arial" font-size="35" fill="#3F51B5" font-weight="bold">%</text>
+    <text x="550" cy="280" font-family="Arial" font-size="25" fill="#673AB7" font-weight="bold">%</text>
+    
+    <!-- Line chart on screen -->
+    <polyline points="140,280 160,260 180,270 200,250 220,230 240,240 260,220" stroke="#4CAF50" stroke-width="2" fill="none"/>
+    
+    <!-- Animation for the line chart -->
+    <g>
+      <circle cx="260" cy="220" r="5" fill="#4CAF50">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Financial growth arrow -->
+    <path d="M320 100L340 80L360 100" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite" />
+    </path>
+    <line x1="350" y1="80" x2="350" y2="120" stroke="#4CAF50" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite" />
+    </line>
+  </g>
+  <defs>
+    <clipPath id="clip0_1234_5680">
+      <rect width="600" height="400" fill="white"/>
+    </clipPath>
+  </defs>
+</svg> 

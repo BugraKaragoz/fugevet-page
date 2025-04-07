@@ -1,0 +1,19 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="30" fill="#E6F1FF"/>
+  
+  <!-- WhatsApp bubble -->
+  <path d="M16 40V28C16 23.5817 19.5817 20 24 20H36C40.4183 20 44 23.5817 44 28V32C44 36.4183 40.4183 40 36 40H20L16 44V40Z" fill="#25D366"/>
+  
+  <!-- WhatsApp phone icon -->
+  <path d="M32 30C33.6569 30 35 28.6569 35 27C35 25.3431 33.6569 24 32 24C30.3431 24 29 25.3431 29 27C29 28.6569 30.3431 30 32 30Z" fill="white"/>
+  <path d="M27 35C27 32.2386 29.2386 30 32 30C34.7614 30 37 32.2386 37 35" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- SMS/Message elements -->
+  <rect x="22" y="34" width="16" height="2" rx="1" fill="white"/>
+  <rect x="26" y="30" width="8" height="2" rx="1" fill="white"/>
+  
+  <!-- Signal waves -->
+  <path d="M48 18C49.3333 16.6667 52.6 14.8 56 18" stroke="#4F94EF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M48 24C49 23 51.4 21.8 54 24" stroke="#4F94EF" stroke-width="2" stroke-linecap="round"/>
+</svg> 

@@ -1,0 +1,93 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#F1EEFF"/>
+  
+  <!-- Background Circles -->
+  <circle cx="80" cy="80" r="40" fill="#D4CAFF" opacity="0.6"/>
+  <circle cx="320" cy="320" r="50" fill="#E0D8FF" opacity="0.6"/>
+  
+  <!-- Cat Illustration -->
+  <g transform="translate(130, 80)">
+    <!-- Cat Head -->
+    <circle cx="70" cy="70" r="60" fill="#673AB7"/>
+    
+    <!-- Ears -->
+    <path d="M35 30L20 10" stroke="#502C8F" stroke-width="12" stroke-linecap="round"/>
+    <path d="M105 30L120 10" stroke="#502C8F" stroke-width="12" stroke-linecap="round"/>
+    <path d="M35 30L25 5" fill="#673AB7"/>
+    <path d="M105 30L115 5" fill="#673AB7"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="50" cy="65" rx="8" ry="15" fill="white"/>
+    <ellipse cx="90" cy="65" rx="8" ry="15" fill="white"/>
+    <ellipse cx="50" cy="65" rx="3" ry="8" fill="#333">
+      <animate attributeName="ry" values="8;2;8" dur="5s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="90" cy="65" rx="3" ry="8" fill="#333">
+      <animate attributeName="ry" values="8;2;8" dur="5s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Nose -->
+    <path d="M70 80L65 90H75L70 80Z" fill="#FF9CAE"/>
+    
+    <!-- Whiskers -->
+    <path d="M60 90H20" stroke="#502C8F" stroke-width="1.5" stroke-linecap="round">
+      <animate attributeName="d" values="M60 90H20;M60 88H20;M60 90H20" dur="4s" repeatCount="indefinite" />
+    </path>
+    <path d="M60 95H15" stroke="#502C8F" stroke-width="1.5" stroke-linecap="round">
+      <animate attributeName="d" values="M60 95H15;M60 97H15;M60 95H15" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M60 100H25" stroke="#502C8F" stroke-width="1.5" stroke-linecap="round">
+      <animate attributeName="d" values="M60 100H25;M60 102H25;M60 100H25" dur="5s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M80 90H120" stroke="#502C8F" stroke-width="1.5" stroke-linecap="round">
+      <animate attributeName="d" values="M80 90H120;M80 88H120;M80 90H120" dur="4s" repeatCount="indefinite" />
+    </path>
+    <path d="M80 95H125" stroke="#502C8F" stroke-width="1.5" stroke-linecap="round">
+      <animate attributeName="d" values="M80 95H125;M80 97H125;M80 95H125" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M80 100H115" stroke="#502C8F" stroke-width="1.5" stroke-linecap="round">
+      <animate attributeName="d" values="M80 100H115;M80 102H115;M80 100H115" dur="5s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Mouth -->
+    <path d="M65 100C70 105 75 105 80 100" stroke="#502C8F" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Cat Toy Ball -->
+    <circle cx="70" cy="170" r="15" fill="#FF6B95">
+      <animate attributeName="cy" values="170;160;170" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <path d="M70 150V120" stroke="#D4CAFF" stroke-width="2" stroke-dasharray="4 2"/>
+  </g>
+  
+  <!-- Paw Prints -->
+  <g transform="translate(50, 230)">
+    <circle cx="20" cy="150" r="5" fill="#673AB7"/>
+    <circle cx="30" cy="145" r="5" fill="#673AB7"/>
+    <circle cx="40" cy="150" r="5" fill="#673AB7"/>
+    <ellipse cx="30" cy="160" rx="10" ry="5" fill="#673AB7"/>
+  </g>
+  
+  <g transform="translate(280, 200)">
+    <circle cx="20" cy="150" r="5" fill="#673AB7"/>
+    <circle cx="30" cy="145" r="5" fill="#673AB7"/>
+    <circle cx="40" cy="150" r="5" fill="#673AB7"/>
+    <ellipse cx="30" cy="160" rx="10" ry="5" fill="#673AB7"/>
+  </g>
+  
+  <!-- Fish Bone -->
+  <g transform="translate(260, 100)">
+    <path d="M0 20C10 0 40 0 50 20C40 40 10 40 0 20Z" fill="#D4CAFF" stroke="#673AB7" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="-5 25 20" to="5 25 20" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M50 20L70 10" stroke="#673AB7" stroke-width="2" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="-5 50 20" to="5 50 20" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M50 20L70 30" stroke="#673AB7" stroke-width="2" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="-5 50 20" to="5 50 20" dur="2s" repeatCount="indefinite" />
+    </path>
+    <circle cx="15" cy="20" r="3" fill="#673AB7">
+      <animateTransform attributeName="transform" type="rotate" from="-5 25 20" to="5 25 20" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg> 

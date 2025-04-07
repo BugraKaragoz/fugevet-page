@@ -1,0 +1,339 @@
+.featureContainer {
+  max-width: 800px;
+  margin-left: 5vw;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  position: relative;
+  z-index: 20;
+}
+
+.titleBlock {
+  padding: 1rem 0;
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.headingContainer.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -0.02em;
+  perspective: 1000px;
+}
+
+.topTitle {
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: 0.2s;
+}
+
+.mainTitle {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: 0.4s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bottomTitle {
+  font-size: 3.2rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: 0.6s;
+}
+
+.animateTitle {
+  animation: textFloat 5s ease-in-out infinite;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #0062cc, #0095ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  display: inline;
+  animation: gradientShift 8s ease infinite;
+  text-shadow: 0 5px 15px rgba(0, 98, 255, 0.15);
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, rgba(0, 98, 255, 0.2), rgba(0, 149, 255, 0.2));
+  z-index: -1;
+  border-radius: 4px;
+  animation: highlightWidth 4s ease-in-out infinite alternate;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #6a3093, #a044ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  display: inline;
+  animation: gradientShift 8s ease infinite 1s;
+  text-shadow: 0 5px 15px rgba(106, 48, 147, 0.15);
+}
+
+.animate .topTitle,
+.animate .mainTitle,
+.animate .bottomTitle {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.ctaButton {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(45deg, #ff6b00, #ff9500);
+  color: white;
+  padding: 1.1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(255, 107, 0, 0.3);
+  overflow: hidden;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.tryButton:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(255, 107, 0, 0.4);
+}
+
+.tryButton:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+  transition: all 0.1s;
+}
+
+.tryButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  transition: left 0.7s ease;
+  z-index: -1;
+}
+
+.tryButton:hover::before {
+  left: 100%;
+}
+
+.appButtons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  justify-content: flex-start;
+}
+
+.appButton {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.appButton:hover {
+  transform: translateY(-3px);
+}
+
+.appButton::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  transition: top 0.5s ease;
+}
+
+.appButton:hover::before {
+  top: 100%;
+}
+
+/* Yeni App Store ve Google Play butonları */
+.modernStoreButton {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  background: #ffffff;
+  gap: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  min-width: 180px;
+}
+
+.modernStoreButton:hover {
+  background: #f9f9f9;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px) scale(1.03);
+}
+
+.storeIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storeTextNew {
+  display: flex;
+  flex-direction: column;
+}
+
+.storeTextNew span:first-child {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.storeTextNew span:last-child {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: -0.15rem;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes textFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes highlightWidth {
+  0%, 100% {
+    width: 100%;
+    opacity: 0.3;
+  }
+  50% {
+    width: 105%;
+    opacity: 0.5;
+  }
+}
+
+.arrowIcon {
+  display: inline-flex;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tryButton:hover .arrowIcon {
+  transform: translateX(5px);
+}
+
+.tryButton:active .arrowIcon {
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .featureContainer {
+    margin-left: 0;
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+  
+  .topTitle, .bottomTitle {
+    font-size: 2.2rem;
+  }
+  
+  .mainTitle {
+    font-size: 2.6rem;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+  }
+  
+  .appButtons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .modernStoreButton {
+    padding: 0.7rem 1rem;
+    min-width: 150px;
+  }
+} 

@@ -1,0 +1,26 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="30" fill="#E6F1FF"/>
+  
+  <!-- Clipboard -->
+  <rect x="15" y="12" width="24" height="36" rx="3" fill="white" stroke="#0066CC" stroke-width="2"/>
+  
+  <!-- Clipboard top -->
+  <rect x="22" y="12" width="10" height="6" rx="2" fill="#0066CC"/>
+  
+  <!-- Clipboard lines -->
+  <line x1="20" y1="24" x2="34" y2="24" stroke="#0066CC" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="20" y1="30" x2="34" y2="30" stroke="#0066CC" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="20" y1="36" x2="28" y2="36" stroke="#0066CC" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Stethoscope -->
+  <circle cx="42" cy="36" r="5" stroke="#4F94EF" stroke-width="2"/>
+  <path d="M42 41V48" stroke="#4F94EF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M42 48C42 48 36 47 33 43" stroke="#4F94EF" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="42" cy="36" r="2" fill="#4F94EF"/>
+  
+  <!-- Medical cross -->
+  <rect x="33" y="16" width="12" height="12" rx="2" fill="#FF6B00"/>
+  <path d="M39 19V25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M36 22H42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg> 

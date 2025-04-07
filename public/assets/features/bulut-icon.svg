@@ -1,0 +1,26 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="30" fill="#E6F1FF"/>
+  
+  <!-- Cloud shape -->
+  <path d="M18 35C15.2386 35 13 32.7614 13 30C13 27.2386 15.2386 25 18 25C18.1817 25 18.3608 25.0096 18.5369 25.0282C19.4468 20.5622 23.3868 17.3335 28 17.3335C33.2873 17.3335 37.6754 21.7217 37.9634 27.2034C40.7446 27.8575 42.8 30.3224 42.8 33.3335C42.8 36.6472 40.1137 39.3335 36.8 39.3335H18C18 39.3335 17.9999 35 18 35Z" fill="#4F94EF" stroke="#0066CC" stroke-width="1.8"/>
+  
+  <!-- Data/document icons in cloud -->
+  <rect x="22" y="28" width="6" height="8" rx="1" fill="white"/>
+  <rect x="23" y="30" width="4" height="1" rx="0.5" fill="#0066CC"/>
+  <rect x="23" y="32" width="4" height="1" rx="0.5" fill="#0066CC"/>
+  <rect x="23" y="34" width="2" height="1" rx="0.5" fill="#0066CC"/>
+  
+  <rect x="31" y="28" width="6" height="8" rx="1" fill="white"/>
+  <rect x="32" y="30" width="4" height="1" rx="0.5" fill="#0066CC"/>
+  <rect x="32" y="32" width="4" height="1" rx="0.5" fill="#0066CC"/>
+  <rect x="32" y="34" width="2" height="1" rx="0.5" fill="#0066CC"/>
+  
+  <!-- Connection lines to the cloud -->
+  <line x1="28" y1="43" x2="28" y2="48" stroke="#0066CC" stroke-width="1.5"/>
+  <line x1="25" y1="45" x2="31" y2="45" stroke="#0066CC" stroke-width="1.5"/>
+  
+  <!-- Secure/shield icon -->
+  <path d="M46 22L42 18L38 22" stroke="#FF6B00" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M42 18V26" stroke="#FF6B00" stroke-width="1.5" stroke-linecap="round"/>
+</svg> 

@@ -1,0 +1,27 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="30" fill="#E6F1FF"/>
+  
+  <!-- Alarm clock body -->
+  <circle cx="30" cy="32" r="16" fill="white" stroke="#0066CC" stroke-width="2"/>
+  
+  <!-- Alarm bell top -->
+  <path d="M25 16C25 16 27.5 13 30 13C32.5 13 35 16 35 16" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Alarm feet -->
+  <path d="M18 42L22 38" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
+  <path d="M42 42L38 38" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Clock hands -->
+  <line x1="30" y1="32" x2="30" y2="22" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="32" x2="38" y2="32" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Notification bubble -->
+  <circle cx="44" cy="16" r="8" fill="#FF6B00"/>
+  <path d="M44 13V19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="44" cy="22" r="1" fill="white"/>
+  
+  <!-- Sound waves -->
+  <path d="M48 28C49.3333 26.6667 52.6 24.8 56 28" stroke="#4F94EF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M48 34C49 33 51.4 31.8 54 34" stroke="#4F94EF" stroke-width="2" stroke-linecap="round"/>
+</svg> 

@@ -1,0 +1,17 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="30" fill="#E6F1FF"/>
+  
+  <!-- Shopping cart -->
+  <path d="M15 18H18L21 34H42L45 22H24" stroke="#0066CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="23" cy="42" r="3" fill="#0066CC"/>
+  <circle cx="40" cy="42" r="3" fill="#0066CC"/>
+  
+  <!-- Price tag -->
+  <path d="M37 14L46 23L33 36L24 27L37 14Z" fill="#4F94EF"/>
+  <circle cx="41" cy="18" r="2" fill="white"/>
+  
+  <!-- Dollar sign -->
+  <path d="M30 22V28" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
+  <path d="M28 24H32C33.1046 24 34 24.8954 34 26V26C34 27.1046 33.1046 28 32 28H28C26.8954 28 26 28.8954 26 30V30C26 31.1046 26.8954 32 28 32H32" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
+</svg> 

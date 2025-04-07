@@ -1,0 +1,64 @@
+.mockupsContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none; /* Mockup'ların altındaki içeriğe tıklamayı engellemez */
+  overflow: visible; /* Görüntülenmeyi sağlamak için visible yapıyoruz */
+  max-width: 100vw; /* Ekran genişliğini aşmaz */
+  z-index: 5; /* Üst katman */
+}
+
+.mockup {
+  position: absolute !important;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  transform-style: preserve-3d; /* 3D efektler için */
+  will-change: transform;
+  /* Kırpma işlemi için containerla aynı boyut sınırlamaları */
+  max-width: none; /* Sınırlama kaldırıldı */
+  overflow: visible;
+}
+
+.mockupImage {
+  object-fit: contain;
+  display: block; /* Önemli - image boşluklarını engeller */
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+  border-radius: 10px;
+  max-width: none; /* Resmin kırpılmamasını sağlar */
+  transform: translateZ(0); /* Hardware acceleration */
+}
+
+/* Hover efekti */
+.mockup:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive (mobil) görünüm */
+@media (max-width: 768px) {
+  .mockupsContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    overflow: hidden; /* Mobilde taşmaları engelle */
+  }
+
+  .mockup {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 10px;
+    width: calc(50% - 20px); /* 2 sütunlu grid */
+  }
+
+  .mockupImage {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+}

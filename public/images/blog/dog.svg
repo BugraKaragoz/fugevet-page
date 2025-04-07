@@ -1,0 +1,62 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#EBF1FF"/>
+  
+  <!-- Background Circles -->
+  <circle cx="300" cy="100" r="50" fill="#BFD1FF" opacity="0.6"/>
+  <circle cx="80" cy="320" r="40" fill="#D4DFFF" opacity="0.6"/>
+  
+  <!-- Dog Illustration -->
+  <g transform="translate(130, 90)">
+    <!-- Dog Head -->
+    <circle cx="70" cy="70" r="60" fill="#6B7AFF"/>
+    
+    <!-- Ears -->
+    <path d="M30 40C20 20 0 30 10 50" stroke="#5264CC" stroke-width="10" stroke-linecap="round"/>
+    <path d="M110 40C120 20 140 30 130 50" stroke="#5264CC" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- Eyes -->
+    <circle cx="50" cy="65" r="8" fill="white"/>
+    <circle cx="90" cy="65" r="8" fill="white"/>
+    <circle cx="50" cy="65" r="4" fill="#333"/>
+    <circle cx="90" cy="65" r="4" fill="#333"/>
+    
+    <!-- Nose -->
+    <circle cx="70" cy="85" r="8" fill="#333"/>
+    
+    <!-- Mouth -->
+    <path d="M55 100C65 110 75 110 85 100" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Dog Bowl -->
+    <path d="M30 160H110" stroke="#5264CC" stroke-width="6" stroke-linecap="round"/>
+    <path d="M35 160C35 180 105 180 105 160" fill="#BFD1FF"/>
+    <path d="M35 160C35 180 105 180 105 160" stroke="#5264CC" stroke-width="3"/>
+    
+    <!-- Paw Prints -->
+    <g transform="translate(-40, 20)">
+      <circle cx="20" cy="150" r="5" fill="#5264CC"/>
+      <circle cx="30" cy="145" r="5" fill="#5264CC"/>
+      <circle cx="40" cy="150" r="5" fill="#5264CC"/>
+      <ellipse cx="30" cy="160" rx="10" ry="5" fill="#5264CC"/>
+    </g>
+    
+    <g transform="translate(130, 30)">
+      <circle cx="20" cy="150" r="5" fill="#5264CC"/>
+      <circle cx="30" cy="145" r="5" fill="#5264CC"/>
+      <circle cx="40" cy="150" r="5" fill="#5264CC"/>
+      <ellipse cx="30" cy="160" rx="10" ry="5" fill="#5264CC"/>
+    </g>
+  </g>
+  
+  <!-- Animated Bone -->
+  <g>
+    <path d="M280 250C290 240 300 240 305 245C310 250 310 260 300 270C290 280 280 280 275 275C270 270 270 260 280 250Z" fill="white" stroke="#5264CC" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0 290 260" to="10 290 260" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    <path d="M330 300C340 290 350 290 355 295C360 300 360 310 350 320C340 330 330 330 325 325C320 320 320 310 330 300Z" fill="white" stroke="#5264CC" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="0 340 310" to="10 340 310" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    <rect x="290" y="260" width="50" height="10" transform="rotate(45 290 260)" fill="white" stroke="#5264CC" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="45 290 260" to="55 290 260" dur="2s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg> 
