@@ -1,0 +1,20 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="30" fill="#E6F1FF"/>
+  
+  <!-- Headset -->
+  <path d="M22 32V26C22 20.4772 26.4772 16 32 16V16C37.5228 16 42 20.4772 42 26V32" stroke="#0066CC" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Left earpiece -->
+  <path d="M15 32C15 28.6863 17.6863 26 21 26V26C21.5523 26 22 26.4477 22 27V37C22 37.5523 21.5523 38 21 38V38C17.6863 38 15 35.3137 15 32V32Z" fill="#0066CC"/>
+  
+  <!-- Right earpiece -->
+  <path d="M42 27C42 26.4477 42.4477 26 43 26V26C46.3137 26 49 28.6863 49 32V32C49 35.3137 46.3137 38 43 38V38C42.4477 38 42 37.5523 42 37V27Z" fill="#0066CC"/>
+  
+  <!-- Mic part -->
+  <path d="M42 33V36C42 40.4183 38.4183 44 34 44H30C25.5817 44 22 40.4183 22 36V33" stroke="#0066CC" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Waves -->
+  <path d="M26 24C27.3333 22.6667 30.6 20.8 34 24" stroke="#4F94EF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M28 28C29 27 31.4 25.8 34 28" stroke="#4F94EF" stroke-width="2" stroke-linecap="round"/>
+</svg> 

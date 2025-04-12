@@ -1,0 +1,56 @@
+/* Admin layout styles */
+
+/* Hide the body content until our admin layout is ready */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 9998;
+}
+
+/* Hide this cover when admin layout is loaded */
+.admin-layout ~ body::before {
+  display: none;
+}
+
+/* Hide all potential site header/footer elements immediately */
+body header, 
+body footer, 
+body nav, 
+body [class*="navbar"], 
+body [class*="footer"], 
+body [class*="nav-"],
+body [class*="Navbar"], 
+body [class*="Footer"], 
+body [class*="ContactButton"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Prevent scrolling on the body */
+html, body {
+  overflow: hidden !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: fixed !important;
+}
+
+/* Ensure our admin content takes precedence */
+.admin-layout {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999 !important;
+  background-color: white !important;
+  overflow: auto !important;
+} 

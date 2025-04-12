@@ -1,0 +1,387 @@
+.howToUseSection {
+  width: 100%;
+  padding: 80px 0;
+  background-color: transparent;
+  background-image: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  background: transparent;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  box-shadow: none;
+}
+
+.sectionHeader::before, .sectionHeader::after {
+  display: none;
+}
+
+.sectionHeader.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionHeader.animate:hover {
+  background: transparent;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #0066ff, #00c2ff);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.stepsContainer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background-color: rgba(0, 102, 255, 0.1);
+  z-index: 1;
+}
+
+.stepCard {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.stepCard.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stepCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.stepContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.stepIconContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 98, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.stepCard:hover .stepIconContainer {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.stepIcon {
+  font-size: 28px;
+}
+
+.stepTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.stepDescription {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.stepImageContainer {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.stepImageContainer svg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.stepCard:hover .stepImageContainer svg {
+  transform: translateY(-5px);
+}
+
+.stepCard:hover .stepImageContainer svg rect,
+.stepCard:hover .stepImageContainer svg path,
+.stepCard:hover .stepImageContainer svg circle {
+  transition: all 0.5s ease;
+}
+
+.stepCard:nth-child(1):hover .stepImageContainer svg rect[fill="#0062ff"] {
+  fill: #2979ff;
+}
+
+.stepCard:nth-child(2):hover .stepImageContainer svg path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 200;
+  animation: drawPath 1.5s ease forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.stepCard:nth-child(3):hover .stepImageContainer svg circle {
+  transform: scale(1.2);
+}
+
+.ctaContainer {
+  margin-top: 80px;
+  text-align: center;
+  padding: 50px 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  transition-delay: 0.6s;
+  position: relative;
+}
+
+.ctaContainer::before, .ctaContainer::after, .ctaBgBlur {
+  display: none;
+}
+
+.ctaContainer.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ctaContainer.animate:hover {
+  background: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ctaDescription {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 35px;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  background: linear-gradient(45deg, #ff6b00, #ff9500);
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(255, 107, 0, 0.35);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 1.05rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.ctaButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  transition: left 0.7s ease;
+  z-index: -1;
+}
+
+.ctaButton:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(255, 107, 0, 0.4);
+}
+
+.ctaButton:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+  transition: all 0.1s;
+}
+
+.ctaButton:hover::before {
+  left: 100%;
+}
+
+.arrowIcon {
+  display: inline-flex;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ctaButton:hover .arrowIcon {
+  transform: translateX(5px);
+}
+
+.ctaButton:active .arrowIcon {
+  transform: translateX(2px);
+}
+
+/* Responsive tasarım */
+@media (max-width: 991px) {
+  .stepsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stepsContainer::before {
+    display: none;
+  }
+
+  .stepCard {
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .howToUseSection {
+    padding: 60px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .stepContent {
+    padding: 20px 15px;
+  }
+
+  .stepTitle {
+    font-size: 1.2rem;
+  }
+
+  .stepIconContainer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stepIcon {
+    font-size: 22px;
+  }
+
+  .stepImageContainer {
+    height: 160px;
+  }
+
+  .ctaContainer {
+    padding: 30px 20px;
+    margin-top: 50px;
+  }
+
+  .ctaTitle {
+    font-size: 1.5rem;
+  }
+
+  .ctaDescription {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .ctaButton {
+    padding: 14px 30px;
+    font-size: 0.95rem;
+  }
+} 

@@ -1,0 +1,112 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120vh;
+  z-index: -1;
+  overflow: hidden;
+  background-color: white;
+  max-width: 100%;
+}
+
+.blobContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Main blob styling */
+.mainBlob {
+  position: absolute;
+  will-change: transform;
+  transform: translate(0, 0) rotate(0deg);
+  transition: transform 0.5s ease-out;
+}
+
+/* Secondary blob styling */
+.secondaryBlob {
+  position: absolute;
+  will-change: transform;
+  transform: translate(0, 0) rotate(0deg);
+  transition: transform 0.5s ease-out;
+}
+
+.animatedPath {
+  will-change: transform;
+}
+
+/* Third blob styling */
+.thirdBlob {
+  position: absolute;
+  animation: floatBlob3 15s ease-in-out infinite alternate;
+}
+
+/* Animations for blobs */
+@keyframes floatBlob3 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(-3%, 3%) scale(1.05) rotate(2deg);
+  }
+  100% {
+    transform: translate(3%, -2%) scale(0.95) rotate(-3deg);
+  }
+}
+
+/* Particles styling */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  contain: layout style paint;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px 2px rgba(0, 98, 255, 0.2);
+  width: var(--size);
+  height: var(--size);
+  left: var(--left);
+  top: var(--top);
+  opacity: 0.4;
+  animation: float var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+  will-change: transform;
+  contain: layout style paint;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -15px);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mainBlob {
+    right: -50%;
+    width: 150%;
+  }
+  
+  .secondaryBlob {
+    top: 0;
+    left: -25%;
+    width: 80%;
+  }
+  
+  .thirdBlob {
+    right: 0;
+    width: 50%;
+  }
+} 

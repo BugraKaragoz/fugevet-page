@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="650" viewBox="0 0 320 650">
+  <!-- Background -->
+  <rect width="320" height="650" fill="#fff"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="320" height="60" fill="#0066ff"/>
+  <text x="20" y="38" fill="white" font-size="18" font-family="Arial, sans-serif" font-weight="600">Tedavi Geçmişi</text>
+  <path d="M20,45 L40,45" stroke="white" stroke-width="2"/>
+  
+  <!-- Search bar -->
+  <rect x="20" y="70" width="280" height="40" rx="20" fill="white" stroke="#eee"/>
+  <circle cx="45" cy="90" r="12" fill="#f5f5f5"/>
+  <path d="M49,94 L55,100" stroke="#666" stroke-width="2"/>
+  <circle cx="45" cy="90" r="6" fill="none" stroke="#666" stroke-width="2"/>
+  <text x="70" y="95" fill="#999" font-size="14" font-family="Arial, sans-serif">Tedavi, hasta veya tarih ara</text>
+  
+  <!-- Filter tabs -->
+  <rect x="20" y="120" width="80" height="35" rx="17.5" fill="#0066ff"/>
+  <text x="40" y="142" fill="white" font-size="13" font-family="Arial, sans-serif" font-weight="bold">Tümü</text>
+  
+  <rect x="110" y="120" width="100" height="35" rx="17.5" fill="white" stroke="#ddd"/>
+  <text x="125" y="142" fill="#666" font-size="13" font-family="Arial, sans-serif">Muayeneler</text>
+  
+  <rect x="220" y="120" width="80" height="35" rx="17.5" fill="white" stroke="#ddd"/>
+  <text x="245" y="142" fill="#666" font-size="13" font-family="Arial, sans-serif">Aşılar</text>
+  
+  <!-- Treatment History Timeline -->
+  <line x1="40" y1="180" x2="40" y2="550" stroke="#e6e6e6" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Treatment 1 -->
+  <circle cx="40" cy="195" r="10" fill="#0066ff"/>
+  <text x="40" y="199" fill="white" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">1</text>
+  <rect x="60" y="170" width="240" height="95" rx="8" fill="white" stroke="#eee"/>
+  <text x="75" y="190" fill="#0066ff" font-size="14" font-family="Arial, sans-serif" font-weight="bold">Köpek - Max</text>
+  <text x="75" y="210" fill="#333" font-size="14" font-family="Arial, sans-serif">Rutin Kontrol Muayenesi</text>
+  <text x="75" y="230" fill="#666" font-size="12" font-family="Arial, sans-serif">Dr. Mehmet Yılmaz</text>
+  <text x="75" y="250" fill="#999" font-size="12" font-family="Arial, sans-serif">05 Nisan 2023, 14:30</text>
+  <rect x="260" y="175" width="30" height="30" rx="15" fill="#f0f7ff"/>
+  <path d="M270,185 L270,195 M265,190 L275,190" stroke="#0066ff" stroke-width="2"/>
+  
+  <!-- Treatment 2 -->
+  <circle cx="40" cy="295" r="10" fill="#9c27b0"/>
+  <text x="40" y="299" fill="white" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">2</text>
+  <rect x="60" y="270" width="240" height="95" rx="8" fill="white" stroke="#eee"/>
+  <text x="75" y="290" fill="#9c27b0" font-size="14" font-family="Arial, sans-serif" font-weight="bold">Kedi - Luna</text>
+  <rect x="160" y="278" width="60" height="20" rx="10" fill="#e1bee7"/>
+  <text x="175" y="292" fill="#9c27b0" font-size="12" font-family="Arial, sans-serif">Aşı</text>
+  <text x="75" y="310" fill="#333" font-size="14" font-family="Arial, sans-serif">Karma Aşı Uygulaması</text>
+  <text x="75" y="330" fill="#666" font-size="12" font-family="Arial, sans-serif">Dr. Ayşe Kaya</text>
+  <text x="75" y="350" fill="#999" font-size="12" font-family="Arial, sans-serif">02 Nisan 2023, 10:15</text>
+  <rect x="260" y="275" width="30" height="30" rx="15" fill="#f0f7ff"/>
+  <path d="M270,285 L270,295 M265,290 L275,290" stroke="#0066ff" stroke-width="2"/>
+  
+  <!-- Treatment 3 -->
+  <circle cx="40" cy="395" r="10" fill="#ff5722"/>
+  <text x="40" y="399" fill="white" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">3</text>
+  <rect x="60" y="370" width="240" height="95" rx="8" fill="white" stroke="#eee"/>
+  <text x="75" y="390" fill="#ff5722" font-size="14" font-family="Arial, sans-serif" font-weight="bold">Köpek - Bella</text>
+  <rect x="165" y="378" width="90" height="20" rx="10" fill="#ffccbc"/>
+  <text x="175" y="392" fill="#ff5722" font-size="12" font-family="Arial, sans-serif">Operasyon</text>
+  <text x="75" y="410" fill="#333" font-size="14" font-family="Arial, sans-serif">Diş Taşı Temizliği</text>
+  <text x="75" y="430" fill="#666" font-size="12" font-family="Arial, sans-serif">Dr. Ali Demir</text>
+  <text x="75" y="450" fill="#999" font-size="12" font-family="Arial, sans-serif">28 Mart 2023, 09:00</text>
+  <rect x="260" y="375" width="30" height="30" rx="15" fill="#f0f7ff"/>
+  <path d="M270,385 L270,395 M265,390 L275,390" stroke="#0066ff" stroke-width="2"/>
+  
+  <!-- Treatment 4 -->
+  <circle cx="40" cy="495" r="10" fill="#4caf50"/>
+  <text x="40" y="499" fill="white" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">4</text>
+  <rect x="60" y="470" width="240" height="95" rx="8" fill="white" stroke="#eee"/>
+  <text x="75" y="490" fill="#4caf50" font-size="14" font-family="Arial, sans-serif" font-weight="bold">Kedi - Mia</text>
+  <text x="75" y="510" fill="#333" font-size="14" font-family="Arial, sans-serif">Göz Enfeksiyonu Tedavisi</text>
+  <text x="75" y="530" fill="#666" font-size="12" font-family="Arial, sans-serif">Dr. Mehmet Yılmaz</text>
+  <text x="75" y="550" fill="#999" font-size="12" font-family="Arial, sans-serif">25 Mart 2023, 16:45</text>
+  <rect x="260" y="475" width="30" height="30" rx="15" fill="#f0f7ff"/>
+  <path d="M270,485 L270,495 M265,490 L275,490" stroke="#0066ff" stroke-width="2"/>
+  
+  <!-- Bottom Menu -->
+  <rect x="0" y="580" width="320" height="70" fill="white" stroke="#eee" stroke-width="1"/>
+  <rect x="0" y="580" width="320" height="1" fill="#eee"/>
+  
+  <circle cx="60" cy="615" r="20" fill="#f0f7ff"/>
+  <path d="M60,608 L60,622 M53,615 L67,615" stroke="#0066ff" stroke-width="2"/>
+  <text x="60" y="645" fill="#0066ff" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">Yeni Ekle</text>
+  
+  <circle cx="160" cy="615" r="20" fill="#ffffff"/>
+  <rect x="153" y="608" width="14" height="14" stroke="#666" stroke-width="2" fill="none"/>
+  <path d="M153,608 L167,622 M167,608 L153,622" stroke="#666" stroke-width="2"/>
+  <text x="160" y="645" fill="#666" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">Filtrele</text>
+  
+  <circle cx="260" cy="615" r="20" fill="#ffffff"/>
+  <path d="M253,615 L267,615 M260,608 L260,622" stroke="#666" stroke-width="2"/>
+  <text x="260" y="645" fill="#666" font-size="12" font-family="Arial, sans-serif" text-anchor="middle">Dışa Aktar</text>
+</svg> 

@@ -1,0 +1,335 @@
+.footer {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  padding: 50px 0 20px;
+  margin-top: 60px;
+  color: #333;
+}
+
+/* Dekoratif elementler */
+.decorDot {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(0,123,255,0.1) 25%, transparent 26%);
+  background-size: 16px 16px;
+  top: 20px;
+  left: 5%;
+  z-index: 0;
+  opacity: 0.5;
+  animation: floatSlow 20s infinite ease-in-out;
+}
+
+.decorCircle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(41,121,255,0.1), rgba(65,105,225,0.05));
+  right: 5%;
+  top: 40px;
+  z-index: 0;
+  animation: pulseSlow 15s infinite alternate;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+@keyframes pulseSlow {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footerCol {
+  flex: 1 1 250px;
+}
+
+.footerCol:first-child {
+  flex: 1.5 1 300px;
+}
+
+.footerLogo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logoImage {
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logoImage:hover {
+  transform: scale(1.05);
+}
+
+.footerDesc {
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  color: #1e40af; /* Koyu mavi */
+  transition: all 0.3s ease;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(225, 239, 254, 0.8);
+  transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+  background-color: #1e40af;
+}
+
+.socialLinks a:hover .socialIcon {
+  color: white;
+  transform: scale(1.1);
+}
+
+.footerTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  color: #0b5ed7; /* Parlak mavi */
+}
+
+.footerTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #0b5ed7, #1e40af);
+  border-radius: 3px;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 12px;
+}
+
+.footerLinks a {
+  color: #444;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  padding-left: 5px;
+}
+
+.footerLinks a::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  background: #0b5ed7;
+  transition: all 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #0b5ed7;
+  padding-left: 10px;
+}
+
+.footerLinks a:hover::before {
+  width: 10px;
+  left: -5px;
+}
+
+.newsletterDesc {
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.newsletterForm {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.newsletterInput {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px 0 0 6px;
+  padding: 12px 16px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.newsletterInput:focus {
+  border-color: #0b5ed7;
+  box-shadow: 0 0 0 2px rgba(11, 94, 215, 0.1);
+}
+
+.newsletterButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: linear-gradient(90deg, #0b5ed7, #1e40af);
+  color: white;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  padding: 0 16px;
+  transition: all 0.3s ease;
+}
+
+.newsletterButton:hover {
+  background: linear-gradient(90deg, #0953c2, #173798);
+  transform: translateX(2px);
+}
+
+.contactInfo {
+  margin-top: 25px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.contactIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  color: #0b5ed7;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  border-top: 1px solid rgba(11, 94, 215, 0.1);
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.copyright {
+  color: #666;
+  font-size: 14px;
+}
+
+.footerExtra {
+  display: flex;
+  gap: 20px;
+}
+
+.createdBy {
+  font-size: 14px;
+  color: #666;
+}
+
+.createdBy a {
+  color: #0b5ed7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.createdBy a:hover {
+  color: #1e40af;
+}
+
+/* Responsive tasarım */
+@media (max-width: 1024px) {
+  .footerTop {
+    gap: 30px;
+  }
+  
+  .footerCol:first-child {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0 20px;
+  }
+  
+  .footerTop {
+    gap: 40px;
+  }
+  
+  .footerCol {
+    flex: 1 1 100%;
+  }
+  
+  .decorDot, .decorCircle {
+    opacity: 0.3;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 0 15px;
+  }
+  
+  .footerDesc {
+    max-width: 100%;
+  }
+} 

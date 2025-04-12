@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+  <!-- Background Circle -->
+  <circle cx="30" cy="30" r="25" fill="url(#treatmentGradient)" />
+  
+  <!-- Medical Cross -->
+  <path d="M30 18V42" stroke="white" stroke-width="3" stroke-linecap="round" />
+  <path d="M18 30H42" stroke="white" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Pulse Line -->
+  <path d="M15 34C15 34 18 26 21 26C24 26 25 34 27 34C29 34 30 30 32 30C34 30 35 34 37 34C39 34 40 30 42 30C44 30 45 34 47 34" 
+        stroke="white" stroke-width="1.5" stroke-linecap="round" />
+  
+  <!-- Circular border -->
+  <circle cx="30" cy="30" r="24" stroke="white" stroke-width="0.5" stroke-opacity="0.3" />
+  
+  <!-- Small decorative circles -->
+  <circle cx="18" cy="22" r="2" fill="white" fill-opacity="0.4" />
+  <circle cx="42" cy="38" r="2" fill="white" fill-opacity="0.4" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="treatmentGradient" x1="10" y1="10" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3F86FF" />
+      <stop offset="1" stop-color="#0062FF" />
+    </linearGradient>
+  </defs>
+</svg> 

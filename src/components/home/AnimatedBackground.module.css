@@ -1,0 +1,163 @@
+.backgroundSection {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+  z-index: -1;
+  background: linear-gradient(135deg, #f8f9fa 0%, #eef6ff 50%, #f5f0ff 100%);
+  overflow: hidden;
+}
+
+.backgroundSection::before {
+  display: none;
+}
+
+.backgroundSection::after {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Dekoratif öğeler - sol tarafta */
+.decorDot {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3F51B5, #673AB7);
+  opacity: 0.7;
+  animation: float 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.decorCircle {
+  position: absolute;
+  bottom: 25%;
+  left: 8%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #3F51B5;
+  opacity: 0.4;
+  animation: pulse 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.decorPaw {
+  position: absolute;
+  top: 35%;
+  left: 12%;
+  width: 35px;
+  height: 35px;
+  opacity: 0.15;
+  animation: rotate 10s linear infinite;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23673AB7' d='M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  will-change: transform;
+}
+
+/* Dekoratif öğeler - sağ tarafta */
+.decorStar {
+  position: absolute;
+  top: 18%;
+  right: 10%;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  animation: pulse 5s ease-in-out infinite;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath fill='%233F51B5' d='M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  will-change: transform;
+}
+
+.decorWave {
+  position: absolute;
+  bottom: 20%;
+  right: 7%;
+  width: 50px;
+  height: 30px;
+  opacity: 0.15;
+  animation: float 8s ease-in-out infinite;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3Cpath fill='%230095ff' d='M471.1 96C405 96 353.3 137.3 320 174.6 286.7 137.3 235 96 168.9 96 75.8 96 0 167.8 0 256s75.8 160 168.9 160c66.1 0 117.8-41.3 151.1-78.6 33.3 37.3 85 78.6 151.1 78.6 93.1 0 168.9-71.8 168.9-160S564.2 96 471.1 96zM168.9 320c-40.2 0-72.9-28.7-72.9-64s32.7-64 72.9-64c38.2 0 73.4 36.1 94 64-20.4 27.7-55.9 64-94 64zm302.2 0c-38.2 0-73.4-36.1-94-64 20.4-27.7 55.9-64 94-64 40.2 0 72.9 28.7 72.9 64s-32.7 64-72.9 64z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  will-change: transform;
+}
+.decorDot2 {
+  position: absolute;
+  top: 60%;
+  right: 15%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF8A65, #FF5722);
+  opacity: 0.6;
+  animation: float 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+.decorCircle2 {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #FF5722;
+  opacity: 0.3;
+  animation: pulse 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.decorPaw2 {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 25px;
+  height: 25px;
+  opacity: 0.1;
+  animation: rotate 12s linear infinite;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23FF5722' d='M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  will-change: transform;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive ayarlar */
+@media (max-width: 991px) {
+  .decorStar, .decorWave {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .decorDot2, .decorCircle2, .decorPaw2 {
+    display: none;
+  }
+} 

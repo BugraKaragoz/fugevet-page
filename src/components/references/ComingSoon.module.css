@@ -1,0 +1,149 @@
+.comingSoonContainer {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.comingSoonContent {
+  max-width: 800px;
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+.comingSoonTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.titleUnderline {
+  width: 80px;
+  height: 4px;
+  margin: 0 auto 2rem;
+  background: linear-gradient(to right, #3F51B5, #673AB7);
+  border-radius: 2px;
+}
+
+.comingSoonSubtitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #080808;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-bottom: 2rem;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Animasyonlu elementler */
+.animatedElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(63, 81, 181, 0.1) 0%, rgba(103, 58, 183, 0.05) 40%, rgba(255, 255, 255, 0) 70%);
+  animation: pulse 4s infinite ease-in-out;
+}
+
+.floatingElement1, .floatingElement2, .floatingElement3 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.floatingElement1 {
+  top: 15%;
+  left: 15%;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #3F51B5, #673AB7);
+  animation: float 8s infinite ease-in-out;
+}
+
+.floatingElement2 {
+  bottom: 20%;
+  right: 20%;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #673AB7, #9C27B0);
+  animation: float 7s infinite ease-in-out reverse;
+}
+
+.floatingElement3 {
+  top: 70%;
+  left: 25%;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(135deg, #3F51B5, #2196F3);
+  animation: float 9s infinite ease-in-out 1s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.3;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive tasarım ayarları */
+@media (max-width: 768px) {
+  .comingSoonTitle {
+    font-size: 2.5rem;
+  }
+  
+  .comingSoonSubtitle {
+    font-size: 1.8rem;
+  }
+  
+  .comingSoonContent {
+    padding: 2rem;
+  }
+} 

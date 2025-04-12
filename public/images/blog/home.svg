@@ -1,0 +1,85 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#EFF8FF"/>
+  
+  <!-- Background Circles -->
+  <circle cx="330" cy="70" r="40" fill="#C1E0FF" opacity="0.6"/>
+  <circle cx="70" cy="330" r="50" fill="#D5EAFF" opacity="0.6"/>
+  
+  <!-- House Illustration -->
+  <g>
+    <!-- House Base -->
+    <rect x="100" y="170" width="200" height="150" rx="2" fill="#E9F5FF" stroke="#3F51B5" stroke-width="3"/>
+    
+    <!-- Roof -->
+    <path d="M80 170L200 90L320 170" fill="#C1D5FF" stroke="#3F51B5" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Door -->
+    <rect x="175" y="240" width="50" height="80" rx="2" fill="#6B7AFF"/>
+    <circle cx="215" cy="280" r="5" fill="#E9F5FF"/>
+    
+    <!-- Windows -->
+    <rect x="125" y="190" width="40" height="40" rx="2" fill="#C1E0FF" stroke="#3F51B5" stroke-width="2"/>
+    <path d="M125 210H165" stroke="#3F51B5" stroke-width="2"/>
+    <path d="M145 190V230" stroke="#3F51B5" stroke-width="2"/>
+    
+    <rect x="235" y="190" width="40" height="40" rx="2" fill="#C1E0FF" stroke="#3F51B5" stroke-width="2"/>
+    <path d="M235 210H275" stroke="#3F51B5" stroke-width="2"/>
+    <path d="M255 190V230" stroke="#3F51B5" stroke-width="2"/>
+    
+    <!-- Chimney -->
+    <rect x="260" y="110" width="20" height="40" fill="#C1D5FF" stroke="#3F51B5" stroke-width="2"/>
+    
+    <!-- Smoke -->
+    <path d="M270 110C280 100 280 90 270 80" stroke="#B4C5E5" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="d" values="M270 110C280 100 280 90 270 80;M270 110C280 100 290 90 280 80;M270 110C280 100 280 90 270 80" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M270 100C285 90 285 75 270 65" stroke="#B4C5E5" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" values="M270 100C285 90 285 75 270 65;M270 100C285 90 295 70 285 60;M270 100C285 90 285 75 270 65" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Pet Safety Elements -->
+  <g>
+    <!-- Plant (Non-toxic) -->
+    <rect x="120" y="300" width="20" height="20" rx="2" fill="#E9F5FF" stroke="#3F51B5" stroke-width="2"/>
+    <path d="M130 300C130 290 125 280 120 275" stroke="#46BB47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M130 300C130 290 135 280 140 275" stroke="#46BB47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M130 300C130 290 130 280 130 270" stroke="#46BB47" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="125" cy="278" r="3" fill="#46BB47"/>
+    <circle cx="135" cy="278" r="3" fill="#46BB47"/>
+    
+    <!-- Pet Bed -->
+    <ellipse cx="260" cy="310" rx="30" ry="10" fill="#3F51B5" opacity="0.3"/>
+    <path d="M230 310C230 300 245 290 260 290C275 290 290 300 290 310" fill="#6B7AFF"/>
+    <path d="M230 310C230 300 245 290 260 290C275 290 290 300 290 310" stroke="#3F51B5" stroke-width="2"/>
+    
+    <!-- Safety Gate -->
+    <path d="M100 235V180M105 235V180M110 235V180M115 235V180M120 235V180" stroke="#3F51B5" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Animated Cat & Dog -->
+  <g transform="translate(315, 295) scale(0.5)">
+    <!-- Cat -->
+    <circle cx="0" cy="0" r="15" fill="#673AB7"/>
+    <path d="M-10 -10L-15 -20" stroke="#502C8F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M10 -10L15 -20" stroke="#502C8F" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-5" cy="-3" r="2" fill="white"/>
+    <circle cx="5" cy="-3" r="2" fill="white"/>
+    <ellipse cx="0" cy="3" rx="3" ry="2" fill="#FF9CAE"/>
+    
+    <animateTransform attributeName="transform" type="translate" values="315,295; 305,295; 315,295" dur="4s" repeatCount="indefinite" additive="sum"/>
+  </g>
+  
+  <g transform="translate(70, 250) scale(0.5)">
+    <!-- Dog -->
+    <circle cx="0" cy="0" r="15" fill="#6B7AFF"/>
+    <path d="M-10 -15L-20 -10" stroke="#5264CC" stroke-width="4" stroke-linecap="round"/>
+    <path d="M10 -15L20 -10" stroke="#5264CC" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-5" cy="-3" r="2" fill="white"/>
+    <circle cx="5" cy="-3" r="2" fill="white"/>
+    <circle cx="0" cy="3" r="3" fill="#333"/>
+    <path d="M-5 8C-5 12 5 12 5 8" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <animateTransform attributeName="transform" type="translate" values="70,250; 80,250; 70,250" dur="3s" repeatCount="indefinite" additive="sum"/>
+  </g>
+</svg> 

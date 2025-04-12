@@ -1,0 +1,21 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="30" fill="#E6F1FF"/>
+  
+  <!-- Person silhouette -->
+  <circle cx="30" cy="22" r="8" fill="#0066CC"/>
+  <path d="M18 46C18 39.3726 23.3726 34 30 34C36.6274 34 42 39.3726 42 46V48H18V46Z" fill="#0066CC" opacity="0.8"/>
+  
+  <!-- Dashboard/list elements -->
+  <rect x="16" y="18" width="3" height="3" rx="1" fill="#4F94EF"/>
+  <rect x="16" y="24" width="3" height="3" rx="1" fill="#4F94EF"/>
+  <rect x="16" y="30" width="3" height="3" rx="1" fill="#4F94EF"/>
+  
+  <rect x="44" y="18" width="3" height="3" rx="1" fill="#4F94EF"/>
+  <rect x="44" y="24" width="3" height="3" rx="1" fill="#4F94EF"/>
+  <rect x="44" y="30" width="3" height="3" rx="1" fill="#4F94EF"/>
+  
+  <!-- Stars/rating -->
+  <path d="M12 14L13.5 17L17 17.5L14.5 19.5L15 23L12 21L9 23L9.5 19.5L7 17.5L10.5 17L12 14Z" fill="#FF6B00"/>
+  <path d="M48 14L49.5 17L53 17.5L50.5 19.5L51 23L48 21L45 23L45.5 19.5L43 17.5L46.5 17L48 14Z" fill="#FF6B00"/>
+</svg> 

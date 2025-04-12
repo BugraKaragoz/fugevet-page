@@ -1,0 +1,90 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" rx="20" fill="#F5F7FF"/>
+  
+  <!-- Dashboard frame -->
+  <rect x="50" y="50" width="500" height="300" rx="12" fill="white" stroke="#E0E6FF" stroke-width="2"/>
+  
+  <!-- Header bar -->
+  <rect x="50" y="50" width="500" height="50" rx="12" fill="#0066FF"/>
+  <rect x="65" y="65" width="120" height="20" rx="5" fill="white" fill-opacity="0.3"/>
+  <circle cx="525" cy="75" r="15" fill="white" fill-opacity="0.2"/>
+  <circle cx="485" cy="75" r="15" fill="white" fill-opacity="0.2"/>
+  
+  <!-- Left menu -->
+  <rect x="50" y="100" width="100" height="250" fill="#F5F7FF"/>
+  <rect x="65" y="120" width="70" height="10" rx="5" fill="#0066FF" fill-opacity="0.6"/>
+  <rect x="65" y="145" width="70" height="10" rx="5" fill="#C4D0FF"/>
+  <rect x="65" y="170" width="70" height="10" rx="5" fill="#C4D0FF"/>
+  <rect x="65" y="195" width="70" height="10" rx="5" fill="#C4D0FF"/>
+  <rect x="65" y="220" width="70" height="10" rx="5" fill="#C4D0FF"/>
+  
+  <!-- Main content -->
+  <!-- Calendar widget -->
+  <rect x="170" y="110" width="170" height="110" rx="8" fill="white" stroke="#E0E6FF" stroke-width="1"/>
+  <rect x="170" y="110" width="170" height="30" rx="8" fill="#F0F4FF"/>
+  <rect x="185" y="122" width="60" height="8" rx="4" fill="#0066FF"/>
+  <rect x="185" y="150" width="140" height="1" fill="#E0E6FF"/>
+  <rect x="185" y="170" width="140" height="1" fill="#E0E6FF"/>
+  <rect x="185" y="190" width="140" height="1" fill="#E0E6FF"/>
+  
+  <!-- Pet records -->
+  <rect x="170" y="230" width="170" height="110" rx="8" fill="white" stroke="#E0E6FF" stroke-width="1"/>
+  <rect x="170" y="230" width="170" height="30" rx="8" fill="#F0F4FF"/>
+  <rect x="185" y="242" width="80" height="8" rx="4" fill="#0066FF"/>
+  
+  <circle cx="200" cy="280" r="15" fill="#FF6B00" fill-opacity="0.2"/>
+  <path d="M196 280C196 278.895 196.895 278 198 278H202C203.105 278 204 278.895 204 280V284C204 285.105 203.105 286 202 286H198C196.895 286 196 285.105 196 284V280Z" fill="#FF6B00"/>
+  <rect x="220" y="273" width="60" height="6" rx="3" fill="#333333"/>
+  <rect x="220" y="284" width="40" height="6" rx="3" fill="#666666"/>
+  
+  <circle cx="200" cy="320" r="15" fill="#0066FF" fill-opacity="0.2"/>
+  <path d="M196 320C196 318.895 196.895 318 198 318H202C203.105 318 204 318.895 204 320V324C204 325.105 203.105 326 202 326H198C196.895 326 196 325.105 196 324V320Z" fill="#0066FF"/>
+  <rect x="220" y="313" width="60" height="6" rx="3" fill="#333333"/>
+  <rect x="220" y="324" width="40" height="6" rx="3" fill="#666666"/>
+  
+  <!-- Stats panel -->
+  <rect x="360" y="110" width="170" height="230" rx="8" fill="white" stroke="#E0E6FF" stroke-width="1"/>
+  <rect x="360" y="110" width="170" height="30" rx="8" fill="#F0F4FF"/>
+  <rect x="375" y="122" width="70" height="8" rx="4" fill="#0066FF"/>
+  
+  <!-- Chart -->
+  <path d="M375 200L400 180L425 190L450 160L475 175L500 150" stroke="#0066FF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="400" cy="180" r="4" fill="#0066FF"/>
+  <circle cx="425" cy="190" r="4" fill="#0066FF"/>
+  <circle cx="450" cy="160" r="4" fill="#0066FF"/>
+  <circle cx="475" cy="175" r="4" fill="#0066FF"/>
+  <circle cx="500" cy="150" r="4" fill="#0066FF"/>
+  
+  <!-- Stats bars -->
+  <rect x="375" y="240" width="140" height="6" rx="3" fill="#F0F4FF"/>
+  <rect x="375" y="240" width="100" height="6" rx="3" fill="#0066FF"/>
+  <rect x="375" y="255" width="140" height="6" rx="3" fill="#F0F4FF"/>
+  <rect x="375" y="255" width="80" height="6" rx="3" fill="#00C2FF"/>
+  <rect x="375" y="270" width="140" height="6" rx="3" fill="#F0F4FF"/>
+  <rect x="375" y="270" width="120" height="6" rx="3" fill="#7C4DFF"/>
+  <rect x="375" y="285" width="140" height="6" rx="3" fill="#F0F4FF"/>
+  <rect x="375" y="285" width="90" height="6" rx="3" fill="#FF6B00"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="30" cy="30" r="20" fill="#0066FF" fill-opacity="0.1"/>
+  <circle cx="570" cy="370" r="25" fill="#00C2FF" fill-opacity="0.1"/>
+  <circle cx="500" cy="40" r="15" fill="#7C4DFF" fill-opacity="0.1"/>
+  <circle cx="100" cy="360" r="15" fill="#FF6B00" fill-opacity="0.1"/>
+  
+  <!-- Paw prints -->
+  <g transform="translate(520, 280) rotate(25)">
+    <circle cx="0" cy="-10" r="5" fill="#0066FF" fill-opacity="0.2"/>
+    <circle cx="-7" cy="0" r="5" fill="#0066FF" fill-opacity="0.2"/>
+    <circle cx="7" cy="0" r="5" fill="#0066FF" fill-opacity="0.2"/>
+    <circle cx="-5" cy="10" r="5" fill="#0066FF" fill-opacity="0.2"/>
+    <circle cx="5" cy="10" r="5" fill="#0066FF" fill-opacity="0.2"/>
+  </g>
+  
+  <g transform="translate(50, 200) rotate(-15)">
+    <circle cx="0" cy="-10" r="5" fill="#FF6B00" fill-opacity="0.2"/>
+    <circle cx="-7" cy="0" r="5" fill="#FF6B00" fill-opacity="0.2"/>
+    <circle cx="7" cy="0" r="5" fill="#FF6B00" fill-opacity="0.2"/>
+    <circle cx="-5" cy="10" r="5" fill="#FF6B00" fill-opacity="0.2"/>
+    <circle cx="5" cy="10" r="5" fill="#FF6B00" fill-opacity="0.2"/>
+  </g>
+</svg> 

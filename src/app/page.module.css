@@ -1,0 +1,40 @@
+.mainContent {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow-x: hidden;
+  background-color: transparent;
+}
+
+/* Animasyonlu arka plan ile içerik arasındaki alanı korumak için */
+.mainContent > section {
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Mobil için ayarlar */
+@media (max-width: 768px) {
+  .mainContent {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  
+  .mainContent > section {
+    margin-bottom: 40px;
+  }
+  
+  /* Mobil görünümde ana içerik konteyner düzenlemeleri */
+  .mainContent > div.container {
+    padding-top: 40px !important;
+  }
+
+  /* Mockuplar ve istatistik görseli gizlendiği için üst boşluk azaltılıyor */
+  .mainContent > div:first-child {
+    min-height: auto;
+    padding-top: 0;
+  }
+} 

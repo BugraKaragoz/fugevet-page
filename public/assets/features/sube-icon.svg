@@ -1,0 +1,30 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="30" fill="#E6F1FF"/>
+  
+  <!-- Main building -->
+  <rect x="20" y="24" width="20" height="25" rx="2" fill="#0066CC"/>
+  <rect x="24" y="29" width="4" height="4" rx="1" fill="white"/>
+  <rect x="32" y="29" width="4" height="4" rx="1" fill="white"/>
+  <rect x="24" y="37" width="4" height="4" rx="1" fill="white"/>
+  <rect x="32" y="37" width="4" height="4" rx="1" fill="white"/>
+  <rect x="26" y="45" width="8" height="4" rx="1" fill="white"/>
+  
+  <!-- Smaller branch building 1 -->
+  <rect x="8" y="34" width="12" height="15" rx="2" fill="#4F94EF"/>
+  <rect x="10" y="37" width="3" height="3" rx="0.5" fill="white"/>
+  <rect x="15" y="37" width="3" height="3" rx="0.5" fill="white"/>
+  <rect x="10" y="42" width="3" height="3" rx="0.5" fill="white"/>
+  <rect x="15" y="42" width="3" height="3" rx="0.5" fill="white"/>
+  
+  <!-- Smaller branch building 2 -->
+  <rect x="40" y="34" width="12" height="15" rx="2" fill="#4F94EF"/>
+  <rect x="42" y="37" width="3" height="3" rx="0.5" fill="white"/>
+  <rect x="47" y="37" width="3" height="3" rx="0.5" fill="white"/>
+  <rect x="42" y="42" width="3" height="3" rx="0.5" fill="white"/>
+  <rect x="47" y="42" width="3" height="3" rx="0.5" fill="white"/>
+  
+  <!-- Connection lines -->
+  <line x1="20" y1="34" x2="13" y2="34" stroke="#0066CC" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="40" y1="34" x2="47" y2="34" stroke="#0066CC" stroke-width="1.5" stroke-linecap="round"/>
+</svg> 

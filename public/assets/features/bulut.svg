@@ -1,0 +1,124 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_1234_5681)">
+    <!-- Background -->
+    <path d="M0 0H600V400H0V0Z" fill="#F0F8FF"/>
+    
+    <!-- Background Blob -->
+    <path d="M500 50C580 110 560 280 450 350C340 420 180 370 100 290C20 210 50 80 150 40C250 0 420 -10 500 50Z" fill="#D6EDFF"/>
+    
+    <!-- Cloud Main -->
+    <path d="M320 150C320 122.386 342.386 100 370 100C397.614 100 420 122.386 420 150C420 150 450 150 450 180C450 210 420 210 420 210H270C270 210 240 210 240 180C240 150 270 150 270 150C270 150 270 135 280 125C290 115 305 115 320 115C335 115 320 150 320 150Z" fill="#2196F3" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.6;0.8" dur="5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Cloud Secondary -->
+    <path d="M150 220C150 201.222 165.222 186 184 186C202.778 186 218 201.222 218 220C218 220 238 220 238 240C238 260 218 260 218 260H118C118 260 98 260 98 240C98 220 118 220 118 220C118 220 118 210 125 203C132 196 142 196 152 196C162 196 150 220 150 220Z" fill="#42A5F5" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Cloud Small 1 -->
+    <path d="M480 240C480 227.85 489.85 218 502 218C514.15 218 524 227.85 524 240C524 240 538 240 538 254C538 268 524 268 524 268H458C458 268 444 268 444 254C444 240 458 240 458 240C458 240 458 234 462 230C466 226 473 226 480 226C487 226 480 240 480 240Z" fill="#64B5F6" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="6s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Lock Icon -->
+    <rect x="300" y="180" width="60" height="70" rx="10" fill="#FFA000"/>
+    <rect x="310" y="180" width="40" height="35" rx="5" fill="#FF6F00"/>
+    <circle cx="330" cy="215" r="15" fill="#FFC107"/>
+    <rect x="325" y="210" width="10" height="20" rx="2" fill="#FF6F00"/>
+    
+    <!-- Data Icons -->
+    <!-- Document -->
+    <rect x="200" y="280" width="40" height="50" rx="3" fill="white" stroke="#333" stroke-width="1"/>
+    <line x1="210" y1="290" x2="230" y2="290" stroke="#333" stroke-width="1"/>
+    <line x1="210" y1="300" x2="230" y2="300" stroke="#333" stroke-width="1"/>
+    <line x1="210" y1="310" x2="220" y2="310" stroke="#333" stroke-width="1"/>
+    
+    <!-- Image -->
+    <rect x="250" y="280" width="40" height="40" rx="3" fill="white" stroke="#333" stroke-width="1"/>
+    <circle cx="260" cy="290" r="3" fill="#333"/>
+    <path d="M250 320 L260 305 L270 315 L280 295 L290 320 Z" fill="#4CAF50"/>
+    
+    <!-- Video -->
+    <rect x="300" y="280" width="50" height="40" rx="3" fill="white" stroke="#333" stroke-width="1"/>
+    <path d="M315 290L315 310L335 300L315 290Z" fill="#F44336"/>
+    
+    <!-- Music -->
+    <rect x="360" y="280" width="40" height="40" rx="3" fill="white" stroke="#333" stroke-width="1"/>
+    <circle cx="370" cy="310" r="5" fill="#333"/>
+    <circle cx="390" cy="305" r="5" fill="#333"/>
+    <line x1="375" y1="310" x2="375" y2="290" stroke="#333" stroke-width="2"/>
+    <line x1="395" y1="305" x2="395" y2="285" stroke="#333" stroke-width="2"/>
+    <line x1="375" y1="290" x2="395" y2="285" stroke="#333" stroke-width="2"/>
+    
+    <!-- Connecting lines from cloud to data -->
+    <line x1="330" y1="250" x2="220" y2="280" stroke="#2196F3" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;-20" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="330" y1="250" x2="270" y2="280" stroke="#2196F3" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;-20" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="330" y1="250" x2="325" y2="280" stroke="#2196F3" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;-20" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="330" y1="250" x2="380" y2="280" stroke="#2196F3" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- People -->
+    <circle cx="150" cy="320" r="20" fill="#FF9800"/>
+    <circle cx="450" cy="320" r="20" fill="#9C27B0"/>
+    
+    <!-- Devices -->
+    <!-- Laptop -->
+    <rect x="130" y="330" width="40" height="30" rx="2" fill="#E0E0E0"/>
+    <rect x="125" y="360" width="50" height="5" rx="2" fill="#BDBDBD"/>
+    
+    <!-- Tablet -->
+    <rect x="438" y="330" width="25" height="35" rx="2" fill="#E0E0E0"/>
+    <rect x="442" y="335" width="17" height="25" rx="1" fill="#F5F5F5"/>
+    
+    <!-- Connection Lines from People to Cloud -->
+    <line x1="150" y1="300" x2="290" y2="230" stroke="#9E9E9E" stroke-width="1" stroke-dasharray="3,3">
+      <animate attributeName="stroke-dashoffset" values="0;-12" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="450" y1="300" x2="350" y2="230" stroke="#9E9E9E" stroke-width="1" stroke-dasharray="3,3">
+      <animate attributeName="stroke-dashoffset" values="0;-12" dur="4s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Small Decorative Elements -->
+    <circle cx="100" cy="120" r="10" fill="#3F51B5" opacity="0.5"/>
+    <circle cx="500" cy="120" r="8" fill="#673AB7" opacity="0.5"/>
+    <circle cx="80" cy="250" r="12" fill="#2196F3" opacity="0.5"/>
+    <circle cx="520" cy="350" r="15" fill="#03A9F4" opacity="0.5"/>
+    
+    <!-- Wi-Fi Signal -->
+    <path d="M280 130C260 150 260 180 280 200" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M290 120C260 150 260 190 290 220" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M300 110C260 150 260 200 300 240" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Sparkles -->
+    <path d="M100 170L105 165L110 170L105 175L100 170Z" fill="#FFC107">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M500 220L505 215L510 220L505 225L500 220Z" fill="#FFC107">
+      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M300 70L305 65L310 70L305 75L300 70Z" fill="#FFC107">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+  <defs>
+    <clipPath id="clip0_1234_5681">
+      <rect width="600" height="400" fill="white"/>
+    </clipPath>
+  </defs>
+</svg> 

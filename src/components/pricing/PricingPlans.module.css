@@ -1,0 +1,232 @@
+.pricingSection {
+  padding: 60px 20px;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.billingToggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e9ecef;
+}
+
+.toggleButton {
+  padding: 8px 20px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.toggleButton.active {
+  color: #0066CC;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discountBadge {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background: #4CAF50;
+  color: white;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.planCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.planCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.planCard.premium {
+  border: 1px solid #0066CC;
+  background: #fff;
+}
+
+.planIcon {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #0066CC;
+}
+
+.bestDeal {
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  background: #0066CC;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.planName {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.planPrice {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 4px;
+}
+
+.period {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.planDescription {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.checkIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #e9ecef;
+  color: #0066CC;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+.planButton {
+  display: block;
+  text-align: center;
+  padding: 12px 24px;
+  background: #0066CC;
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  border: none;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.planButton:hover {
+  background: #0052a3;
+  transform: translateY(-2px);
+}
+
+.premiumButton {
+  background: #0066CC;
+  color: white;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.premiumButton:hover {
+  background: #0052a3;
+}
+
+@media (max-width: 1024px) {
+  .plansGrid {
+    gap: 20px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricingSection {
+    padding: 40px 20px;
+  }
+
+  .plansGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .planCard {
+    padding: 24px;
+  }
+
+  .planName {
+    font-size: 1.4rem;
+  }
+
+  .price {
+    font-size: 2.4rem;
+  }
+
+  .featuresList {
+    gap: 10px;
+  }
+} 
