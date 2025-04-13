@@ -441,32 +441,133 @@
   transform: translateX(2px);
 }
 
+/* Mobil responsive düzenlemeler */
 @media (max-width: 768px) {
   .featureContainer {
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    margin-left: 0;
+    padding: 1rem 1.5rem 2rem;
+    margin-top: 0;
     min-height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Mobilde mockupları göster ve boşluğu azalt */
+  .mobileOnlyMockups {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0; /* Boşluğu azalt */
   }
   
   .topTitle, .bottomTitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   
   .mainTitle {
-    font-size: 2.6rem;
+    font-size: 2rem;
+  }
+  
+  .headingContainer {
+    margin-top: 10px; /* Mockup ile başlık arasındaki boşluğu azalt */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    align-items: center; /* Başlığı merkeze hizala */
   }
   
   .description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .ctaButton {
+    justify-content: center; /* Butonu ortala */
   }
   
   .appButtons {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
   }
   
   .modernStoreButton {
-    width: 100%;
+    min-width: auto;
+    padding: 0.6rem 0.8rem;
+    border-radius: 10px;
   }
+  
+  .storeTextNew {
+    font-size: 0.8rem;
+  }
+  
+  .storeTextNew span:first-child {
+    font-size: 0.6rem;
+  }
+  
+  .storeIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Mobilde hayvan ikonunu göster */
+  .petIconContainer {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .petIcon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .appButtons {
+    margin-top: 1.5rem;
+  }
+  
+  .modernStoreButton {
+    padding: 0.5rem 0.7rem;
+  }
+  
+  .storeTextNew {
+    font-size: 0.7rem;
+  }
+  
+  .storeTextNew span:first-child {
+    font-size: 0.5rem;
+  }
+  
+  .storeIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Hero section'daki hayvan ikonu */
+.petIconContainer {
+  display: none; /* Varsayılan olarak gizli (masaüstü) */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.petIcon {
+  width: 80px; 
+  height: 80px;
+  color: #0062cc;
+}
+
+/* Mobil mockup container */
+.mobileOnlyMockups {
+  display: none; /* Masaüstünde gizli */
+  width: 100%;
+  margin-bottom: 10px;
+  height: auto;
+  position: relative;
 } 

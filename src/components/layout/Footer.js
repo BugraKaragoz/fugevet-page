@@ -35,7 +35,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className={styles.footerDesc}>
-              PawSoft, veteriner klinikleriniz için modern, kullanımı kolay ve kapsamlı yönetim yazılımı. Hayvan dostlarınızın sağlığı bizim önceliğimizdir.
+              FugeVet, veteriner klinikleriniz için modern, kullanımı kolay ve kapsamlı yönetim yazılımı. Hayvan dostlarınızın sağlığı bizim önceliğimizdir.
             </p>
             <div className={styles.socialLinks}>
               <a href="https://www.linkedin.com/company/fugevet/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

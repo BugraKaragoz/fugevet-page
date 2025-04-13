@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import styles from './FeatureSection.module.css';
+import Mockups from './Mockups';
 
 const FeatureSection = () => {
   const headingRef = useRef(null);
@@ -15,6 +16,10 @@ const FeatureSection = () => {
   return (
     <div className={styles.featureContainer}>
       <div className={styles.titleBlock}>
+        <div className={styles.mobileOnlyMockups}>
+          <Mockups />
+        </div>
+        
         <div className={styles.headingContainer} ref={headingRef}>
           <h1 className={styles.title}>
             <span className={`${styles.topTitle} ${styles.animateTitle}`}>Klinik Zekânız Artık</span>

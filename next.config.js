@@ -11,7 +11,12 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'cdnfonts.com',
-        pathname: '**',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        pathname: '/**',
       },
     ],
     formats: ['image/webp'],

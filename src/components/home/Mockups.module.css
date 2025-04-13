@@ -87,6 +87,101 @@
 /* Responsive (mobil) görünüm */
 @media (max-width: 768px) {
   .mockupsContainer {
-    display: none !important; /* Mobilde mockupları tamamen gizle */
+    display: block !important; /* Mobilde mockupları göster */
+    position: relative;
+    height: 200px; /* Mobil mockup container yüksekliğini azalttım */
+    margin-top: 15px;
+    margin-bottom: 0; /* Boşluğu azalttım */
+  }
+  
+  .mockup {
+    position: relative !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+  
+  /* Mobil için mockup pozisyonları - daha kompakt */
+  .mockup:nth-child(1) {
+    position: absolute !important;
+    top: 100px !important; /* Daha yukarı taşıdım */
+    right: 28% !important;
+    z-index: 10 !important;
+    width: 230px !important;
+    height: auto !important;
+    transform: rotate(2deg) !important;
+  }
+  
+  .mockup:nth-child(2) {
+    position: absolute !important;
+    top: 200px !important; /* Daha yukarı taşıdım */
+    right: 55% !important;
+    z-index: 20 !important;
+    width: 140px !important;
+    height: auto !important;
+    transform: rotate(-3deg) !important;
+  }
+  
+  .mockup:nth-child(3) {
+    position: absolute !important;
+    top: 210px !important; /* Daha yukarı taşıdım */
+    right: 28% !important;
+    z-index: 30 !important;
+    width: 120px !important;
+    height: auto !important;
+    transform: rotate(5deg) !important;
+  }
+  
+  .mockup:nth-child(4) {
+    position: absolute !important;
+    top: 230px !important; /* Daha yukarı taşıdım */
+    right: 49% !important;
+    z-index: 40 !important;
+    width: 40px !important;
+    height: auto !important;
+    transform: rotate(-5deg) !important;
+  }
+  
+  .mockupImage {
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Mobilde animasyonları durdur */
+  .floatAnimation1, .floatAnimation2, .floatAnimation3, .floatAnimation4 {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mockupsContainer {
+    height: 170px; /* Daha küçük ekranlarda mockup container yüksekliği */
+    margin-top: 15px;
+  }
+  
+  /* Daha küçük ekranlar için mockup pozisyonları */
+  .mockup:nth-child(1) {
+    width: 110px !important;
+    right: 20% !important;
+    top: 0 !important;
+  }
+  
+  .mockup:nth-child(2) {
+    width: 90px !important;
+    top: 25px !important;
+    right: 0 !important;
+  }
+  
+  .mockup:nth-child(3) {
+    width: 65px !important;
+    top: 60px !important;
+    right: 25% !important;
+  }
+  
+  .mockup:nth-child(4) {
+    width: 35px !important;
+    top: 25px !important;
+    right: 48% !important;
   }
 }

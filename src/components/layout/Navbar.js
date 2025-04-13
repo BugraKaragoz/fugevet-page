@@ -67,9 +67,19 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
+          
+          {/* Mobil görünümde butonlar menü içinde görünür */}
+          <div className={styles.mobileButtons}>
+            <Link href="/login" className={styles.loginButton}>
+              Giriş Yap
+            </Link>
+            <Link href="/trial" className={styles.trialButton}>
+              Ücretsiz Dene!
+            </Link>
+          </div>
         </div>
 
-        {/* Butonlar - Masaüstünde sağda */}
+        {/* Butonlar - Sadece masaüstünde sağda */}
         <div className={styles.buttonGroup}>
           <Link href="/login" className={styles.loginButton}>
             Giriş Yap

@@ -13,13 +13,13 @@ export const metadata = {
   },
 }
 
-export default function AdminRootLayout({ children }) {
+export default function AdminLayout({ children }) {
   return (
     <html lang="tr">
       <head>
         <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sf-pro-display" />
       </head>
-      <body suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true} className={`${inter.className} admin-body`}>
         {children}
       </body>
     </html>

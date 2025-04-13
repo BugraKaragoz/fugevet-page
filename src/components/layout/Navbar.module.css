@@ -159,6 +159,16 @@
   transform: translateY(-9px) rotate(-45deg);
 }
 
+/* Yeni mobil menü içi butonlar */
+.mobileButtons {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px 20px;
+  gap: 10px;
+  margin-top: 10px;
+}
+
 /* Mobil responsive düzenlemeler */
 @media (max-width: 768px) {
   .navbar {
@@ -217,20 +227,28 @@
     display: none;
   }
   
-  /* Butonlar ortaya konumlandırıldı */
+  /* Mobilde ana butonları gizle, mobilButtons'ı göster */
   .buttonGroup {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: row;
-    gap: 0.5rem;
-    order: 2;
+    display: none;
   }
   
-  .loginButton, .trialButton {
-    padding: 0.35rem 0.8rem;
-    font-size: 0.8rem;
-    white-space: nowrap;
+  .mobileButtons {
+    display: flex;
+  }
+  
+  /* Mobil menü içindeki butonlar için özel stil */
+  .mobileButtons .loginButton {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #0062cc, #0095ff);
+    box-shadow: 0 4px 15px rgba(0, 98, 204, 0.3);
+  }
+  
+  .mobileButtons .trialButton {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #ff6b00, #ff9500);
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
   }
 }
 
@@ -242,18 +260,5 @@
   
   .logoImage {
     width: 100px !important;
-  }
-  
-  .buttonGroup {
-    gap: 0.35rem;
-  }
-  
-  .loginButton, .trialButton {
-    padding: 0.3rem 0.7rem;
-    font-size: 0.75rem;
-  }
-  
-  .menuItems {
-    top: 55px;
   }
 } 
