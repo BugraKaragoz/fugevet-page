@@ -112,6 +112,12 @@ body.admin-body [class*="ContactButton"] {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .stat-card-icon {
@@ -134,6 +140,20 @@ body.admin-body [class*="ContactButton"] {
   font-size: 1.5rem;
   font-weight: bold;
   color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card-trend {
+  font-size: 0.75rem;
+  color: #38a169;
+  font-weight: 500;
+}
+
+/* Chart containers */
+.chart-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
 }
 
 /* Admin forms */
@@ -218,6 +238,39 @@ body.admin-body [class*="ContactButton"] {
 
 .btn-danger:hover {
   background-color: #c53030;
+}
+
+/* Cookie istatistikleri */
+.cookie-stats-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cookie-stat-card {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.cookie-stat-title {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.cookie-stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+/* Doughnut chart container */
+.doughnut-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 /* Login form */

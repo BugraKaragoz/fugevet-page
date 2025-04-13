@@ -1,14 +1,19 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend, ArcElement } from 'chart.js';
+import { Line, Bar, Doughnut } from 'react-chartjs-2';
+
+// Chart.js bileşenlerini kaydet
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend, ArcElement);
 
 export default function DashboardPage() {
   // Demo veriler
   const stats = [
-    { id: 1, title: 'Toplam Ürün', value: '324', icon: 'box', color: 'bg-blue-100 text-blue-600' },
-    { id: 2, title: 'Toplam Kullanıcı', value: '876', icon: 'users', color: 'bg-green-100 text-green-600' },
-    { id: 3, title: 'Toplam Sipariş', value: '1245', icon: 'shopping-bag', color: 'bg-purple-100 text-purple-600' },
-    { id: 4, title: 'Toplam Gelir', value: '₺42,650', icon: 'dollar-sign', color: 'bg-yellow-100 text-yellow-600' },
+    { id: 1, title: 'Toplam Ürün', value: '324', icon: 'box', color: 'bg-blue-100 text-blue-600', trend: '+8% bu ay' },
+    { id: 2, title: 'Toplam Kullanıcı', value: '876', icon: 'users', color: 'bg-green-100 text-green-600', trend: '+12% bu ay' },
+    { id: 3, title: 'Toplam Sipariş', value: '1245', icon: 'shopping-bag', color: 'bg-purple-100 text-purple-600', trend: '+5% bu ay' },
+    { id: 4, title: 'Toplam Gelir', value: '₺42,650', icon: 'dollar-sign', color: 'bg-yellow-100 text-yellow-600', trend: '+15% bu ay' },
   ];
 
   const recentActivities = [
@@ -18,6 +23,69 @@ export default function DashboardPage() {
     { id: 4, title: 'Yeni blog yazısı', user: 'admin', time: '5 saat önce' },
     { id: 5, title: 'Sistem güncellemesi', user: 'admin', time: '1 gün önce' },
   ];
+
+  // Cookie istatistikleri
+  const [cookieStats, setCookieStats] = useState({
+    acceptedCount: 0,
+    rejectedCount: 0,
+    customizedCount: 0,
+    totalVisitors: 0
+  });
+
+  // Bu fonksiyon gerçek veriler için API'den veri çekmek için kullanılabilir
+  useEffect(() => {
+    // Simüle edilmiş veri
+    setCookieStats({
+      acceptedCount: 785,
+      rejectedCount: 120,
+      customizedCount: 230,
+      totalVisitors: 1135
+    });
+  }, []);
+
+  // Grafik verileri
+  const lineChartData = {
+    labels: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran'],
+    datasets: [
+      {
+        label: 'Ziyaretçi Sayısı',
+        data: [1200, 1900, 3000, 5000, 4000, 6500],
+        borderColor: 'rgb(53, 162, 235)',
+        backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      },
+    ],
+  };
+
+  const barChartData = {
+    labels: ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'],
+    datasets: [
+      {
+        label: 'Günlük Kullanıcı',
+        data: [65, 59, 80, 81, 56, 40, 30],
+        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+      },
+    ],
+  };
+
+  const doughnutChartData = {
+    labels: ['Kabul Edildi', 'Reddedildi', 'Özelleştirildi'],
+    datasets: [
+      {
+        data: [cookieStats.acceptedCount, cookieStats.rejectedCount, cookieStats.customizedCount],
+        backgroundColor: [
+          'rgba(75, 192, 192, 0.6)',
+          'rgba(255, 99, 132, 0.6)',
+          'rgba(255, 205, 86, 0.6)',
+        ],
+        borderColor: [
+          'rgba(75, 192, 192, 1)',
+          'rgba(255, 99, 132, 1)',
+          'rgba(255, 205, 86, 1)',
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
 
   const getIcon = (iconName) => {
     switch (iconName) {
@@ -63,12 +131,96 @@ export default function DashboardPage() {
             </div>
             <div className="stat-card-title">{stat.title}</div>
             <div className="stat-card-value">{stat.value}</div>
+            <div className="stat-card-trend">{stat.trend}</div>
           </div>
         ))}
       </div>
       
-      {/* Son Aktiviteler & İstatistikler */}
+      {/* Grafikler */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4">Ziyaretçi İstatistikleri</h2>
+          <div className="h-64">
+            <Line 
+              data={lineChartData} 
+              options={{
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                  legend: {
+                    position: 'top',
+                  },
+                  title: {
+                    display: true,
+                    text: 'Aylık Ziyaretçi Grafiği'
+                  },
+                }
+              }}
+            />
+          </div>
+        </div>
+        
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4">Haftalık Kullanıcı Trafiği</h2>
+          <div className="h-64">
+            <Bar 
+              data={barChartData}
+              options={{
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                  legend: {
+                    position: 'top',
+                  },
+                  title: {
+                    display: true,
+                    text: 'Günlük Kullanıcı Sayısı'
+                  },
+                }
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* Cookie İstatistikleri & Son Aktiviteler */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div className="bg-white rounded-lg shadow p-6">
+          <h2 className="text-lg font-semibold mb-4">Cookie İstatistikleri</h2>
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <p className="text-sm text-gray-500">Toplam Ziyaretçi</p>
+              <p className="text-2xl font-bold">{cookieStats.totalVisitors}</p>
+            </div>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <p className="text-sm text-gray-500">Kabul Oranı</p>
+              <p className="text-2xl font-bold">
+                {Math.round((cookieStats.acceptedCount / cookieStats.totalVisitors) * 100)}%
+              </p>
+            </div>
+          </div>
+          <div className="h-64 flex items-center justify-center">
+            <div className="w-3/4 h-full">
+              <Doughnut 
+                data={doughnutChartData}
+                options={{
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  plugins: {
+                    legend: {
+                      position: 'bottom',
+                    },
+                    title: {
+                      display: true,
+                      text: 'Cookie Tercihleri'
+                    },
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </div>
+        
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-lg font-semibold mb-4">Son Aktiviteler</h2>
           <div className="space-y-4">
@@ -85,24 +237,12 @@ export default function DashboardPage() {
             ))}
           </div>
         </div>
-        
-        <div className="bg-white rounded-lg shadow p-6">
-          <h2 className="text-lg font-semibold mb-4">İstatistikler</h2>
-          <div className="flex items-center justify-center h-48 text-gray-400">
-            <div className="text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-              <p>Grafik bileşenleri backend bağlantısı sonrası eklenecek</p>
-            </div>
-          </div>
-        </div>
       </div>
       
       {/* Hızlı İşlemler */}
       <div className="mt-6">
         <h2 className="text-lg font-semibold mb-4">Hızlı İşlemler</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <button className="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -120,6 +260,13 @@ export default function DashboardPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
             Rapor Oluştur
+          </button>
+          <button className="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Cookie Ayarları
           </button>
         </div>
       </div>

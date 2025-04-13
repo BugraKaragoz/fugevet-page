@@ -256,36 +256,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  border-top: 1px solid rgba(11, 94, 215, 0.1);
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
-  gap: 15px;
 }
 
 .copyright {
-  color: #666;
   font-size: 14px;
+  color: #666;
 }
 
 .footerExtra {
   display: flex;
-  gap: 20px;
+  align-items: center;
 }
 
-.createdBy {
-  font-size: 14px;
-  color: #666;
+.microsoftBadge {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
 }
 
-.createdBy a {
-  color: #0b5ed7;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
+.microsoftLogo {
+  height: auto !important;
+  width: auto !important;
+  max-width: 240px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
 }
 
-.createdBy a:hover {
-  color: #1e40af;
+.microsoftLogo:hover {
+  opacity: 0.85;
 }
 
 /* Responsive tasarım */
@@ -296,6 +298,10 @@
   
   .footerCol:first-child {
     flex: 1 1 100%;
+  }
+  
+  .microsoftLogo {
+    max-width: 200px;
   }
 }
 
@@ -322,6 +328,11 @@
     text-align: center;
     gap: 10px;
   }
+  
+  .microsoftLogo {
+    max-width: 180px;
+    margin: 10px auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -331,5 +342,111 @@
   
   .footerDesc {
     max-width: 100%;
+  }
+  
+  .microsoftLogo {
+    max-width: 160px;
+  }
+}
+
+/* Yeni alt footer stili - gönderilen görseldeki gibi */
+.bottomFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  background-color: transparent;
+}
+
+.logoSection, .microsoftSection, .infoSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logoSection {
+  justify-content: flex-start;
+}
+
+.bottomLogo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.microsoftSection {
+  justify-content: center;
+}
+
+.microsoftLogo {
+  height: 60px;
+  width: auto;
+  max-height: none;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.microsoftLogo:hover {
+  opacity: 0.85;
+}
+
+.infoSection {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.infoLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.infoLink {
+  color: #666;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.infoLink:hover {
+  color: #0b5ed7;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .bottomFooter {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 0;
+  }
+  
+  .logoSection, .microsoftSection, .infoSection {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .infoSection {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .infoLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .infoLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
   }
 } 

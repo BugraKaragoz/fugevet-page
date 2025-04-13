@@ -118,13 +118,33 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className={styles.footerBottom}>
-          <div className={styles.copyright}>
-            © {new Date().getFullYear()} FugeVet. Tüm hakları saklıdır.
+        {/* Bottom footer - Görseldeki gibi düzenlendi */}
+        <div className={styles.bottomFooter}>
+          <div className={styles.logoSection}>
+            <Image 
+              src="/assets/Varlık 7.png" 
+              alt="FugeVet Logo" 
+              width={150} 
+              height={50} 
+              className={styles.bottomLogo}
+            />
           </div>
-          <div className={styles.footerExtra}>
-            <div className={styles.createdBy}>
-             FugeVet ile <a href="#" target="_blank" rel="noopener noreferrer">Geliştirilmiştir</a>
+          
+          <div className={styles.microsoftSection}>
+            <Image 
+              src="/assets/microsoft.png" 
+              alt="Microsoft Partner" 
+              width={100} 
+              height={60} 
+              className={styles.microsoftLogo}
+            />
+          </div>
+          
+          <div className={styles.infoSection}>
+            <div className={styles.infoLinks}>
+              <Link href="/privacy" className={styles.infoLink}>Gizlilik Politikası</Link>
+              <Link href="/terms" className={styles.infoLink}>Kullanım Sözleşmesi</Link>
+              <Link href="/contact" className={styles.infoLink}>İletişim</Link>
             </div>
           </div>
         </div>
